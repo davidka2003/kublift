@@ -219,8 +219,7 @@ body{
     
 }
 .our-services{
-    
-    &-description{
+    &__description{
         padding: 50px;
         :nth-child(1){
             text-align: center;
@@ -233,21 +232,69 @@ body{
             font-weight: 200;
         }
     }
-    &-maintenance{
-        padding: 50px;
-        background-color: whitesmoke;
-        p{
-            font-size: 15pt;
-            font-weight: 300;
-        }
-        .maintenance-list{
-            p{
-                font-size: 12pt;
-                font-weight: 200;
-            }
+
+    &__img-container{
+        overflow: hidden;
+        padding: 0px 50px;
+        width: 100%;
+        max-height: 450px;
+        img{
+            width: 100%;
         }
     }
-    &-work{
+    &__maintenance{
+        p:nth-child(1){
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 16pt;
+            font-weight: 400;
+            color: $primary-red;
+        }
+        .maintenance-list{
+            
+            padding: 10px 50px;
+
+            &__header{
+                cursor: pointer;
+                padding: 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 400;
+                }
+                svg{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    transition: all 0.4s ease;
+                }
+                svg.active{
+                    transform: rotate(+180deg);
+                    color: $primary-red;
+                }
+            }
+            &__hidden-content{
+                display: none;
+            }
+            
+        }
+        .maintenance-list:nth-child(2n){
+            background-color: whitesmoke;
+        }
+        .maintenance-list:nth-child(2n+1){
+            background-color: rgb(231, 231, 231);
+        }
+        .subparagraph{
+            padding: 10px 50px;
+            font-size: 10pt;
+            font-weight: 200;
+        }
+    }
+    &__work{
         .grid{
             background-color: white;
             display: flex;
@@ -270,8 +317,83 @@ body{
             }
         }
     }
+
+    
     
 }
+
+.vacancies-body{
+    min-height: calc(100vh - 350px);
+    display: flex;
+    .vacancies{
+        width: 100%;
+        margin-top: 50px;
+        h1{
+            text-align: center;
+            font-size: 22pt;
+            font-weight: 400;
+            color: $primary-red;
+            margin-bottom: 50px;
+        }
+        &__list{
+            background-color: whitesmoke;
+            padding: 10px 50px;
+            margin-bottom: 10px;
+
+            &--header{
+                cursor: pointer;
+                padding: 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                p{
+                    padding:10px 0px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 400;
+                }
+                svg{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    transition: all 0.4s ease;
+                }
+                &.active{
+                    svg{
+                        transform: rotate(+180deg);
+                        color: $primary-red;
+                    }
+                    p{
+                        color: $primary-red;
+                    }
+
+                }
+            }
+            &--hidden-content{
+                padding: 20px;
+                display: none;
+                p{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 200;
+                }
+            }
+            .d-b{
+                display: block;
+            }
+            
+        }
+
+        
+    }
+    
+}
+
+
 
 .contacts{
     padding: 60px;
@@ -304,6 +426,7 @@ body{
         text-align: justify;
     }
     &__row{
+        margin-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         .col{
@@ -377,7 +500,7 @@ body{
             .nav-panel{
                 display: none;
                 div:nth-child(2n) {
-                    background: rgb(240, 240, 240); /* Цвет фона */
+                    background: rgb(240, 240, 240); 
                 } 
                 .nav-link{
                     border-left: none;
@@ -500,6 +623,56 @@ body{
             }
         }
     }
-    
+    .our-services{
+        min-height: calc(100vh - 300px);
+        &-description{
+            padding: 10px;
+        }     
+        &-maintenance{
+            .maintenance-list{
+                padding: 10px;
+            }
+        }   
+    }
+    .contacts{
+        padding: 10px;
+    }
+    .partners{
+        &__row{
+            .col{
+                padding: 10px;
+                min-height: fit-content;
+                min-width: 99%;
+                
+                .head-container{
+                    .img-container{
+
+                        justify-content: center;
+                        img{
+                            width: 50%;
+                        }
+                        
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 15pt;
+                        color: $primary-red;
+                    }
+                }
+                .hover-container{
+                    display: block;
+                    .text-container{
+                        min-height: auto;
+                        p{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
     
 }

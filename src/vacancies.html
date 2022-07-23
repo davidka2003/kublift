@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии</title>
+   <!-- Styles -->
+   <link rel="stylesheet" href="./styles/styles.css">
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+
+   <!-- Slick -->
+   <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+   <!-- Bootstrap  -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+   <!-- AOS -->
+   <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+</head>
+<body>
+    <div class="header">
+        <div class="top-header-pannel">
+            <div class="nav-panel">
+                <div class="nav-link">
+                    <a href="/src/">О нас</a>
+                </div>
+                <div class="nav-dropdown">
+                    <div class="dropbtn">
+                        <a >Наши услуги</a>
+                    </div>
+                    
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="/src/maintenance.html">Техническое обслуживание</a>
+                      <a href="/src/repair.html">Ремонт </a>
+                      <a href="/src/modernization.html">Модернизация</a>
+                      <a href="/src/dispatching.html">Диспетчеризация</a>
+                      <a href="/src/dismantling.html">Демонтаж</a>
+                    </div>
+                </div>
+                <div class="nav-link">
+                    <a href="/src/partners.html">Наши партнеры</a>
+                </div>
+                <div class="nav-link">
+                    <a href="/src/vacancies.html">Вакансии</a>
+                </div>
+                <div class="nav-link">
+                    <a href="/src/contacts.html">Контакты</a>
+                </div>
+                
+                
+            </div>
+            <div class="mobile-show-btn-container">
+                <button class="mobile-accrodion">
+                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="bottom-header-panel">
+            <div class="logo-container">
+                <img src="/src/img/logo.jpg" alt="" class="logo">
+            </div>
+            <div class="connection-panel">
+                <button class="btn-email" data-clipboard-text="qwerty@gmail.com" > qwerty@gmail.com </button>
+                <button class="btn-phone" data-clipboard-text="+790429242222"> +7123456789 </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="vacancies-body">
+        <div class="vacancies">
+            <h1>В нашей организации открыты вакансии:</h1>
+            <div class="vacancies__list">
+                <div class="vacancies__list--header active">
+                    <p>Электромеханик по лифтам:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </div>
+                
+                <div class="vacancies__list--hidden-content d-b">
+                    <p>К самостоятельной работе в качестве электромеханика по лифтам допускаются лица не моложе 18 лет, 
+                        прошедшие медицинское освидетельствование и имеющие практический стаж по обслуживанию и ремонту лифтов или их монтажу не менее шести месяцев..
+                        Электромеханик по лифтам должен быть обучен по соответствующей программе и аттестован комиссией учебного заведения производившего обучение. 
+                        
+                    </p>
+                    <p>В обязанности электромеханика входят содержание лифтов в исправном состоянии путем проведения регулярных осмотров и ремонтов в установленные графиком сроки, 
+                        ведение систематического контроля за правильным ведением журналов ежесменного осмотра лифта и технического обслуживания, 
+                        своевременное устранение выявленных неисправностей, а также регулярные личные осмотры лифтов.</p>
+                </div>
+            </div>
+            <div class="vacancies__list">
+                <div class="vacancies__list--header">
+                    <p>Помощник электромеханика по лифтам:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </div>
+                
+                <div class="vacancies__list--hidden-content">
+                    <p>
+                        Помощник электромеханика по лифтам, не имеющий шестимесячного практического стажа, может привлекаться к техническому обслуживанию и ремонту лифтов только под руководством электромеханика, которому поручено техническое обслуживание и ремонт лифтов.
+
+
+                    </p>
+                    <p>Помощник электромеханика по лифтам должен быть обучен по соответствующей программе.</p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+    
+    
+
+
+
+    <div class="bottom">
+        <p><p> Адрес: </p> Москва, улица .... ..... .....</p>
+        <p>Телефон: +71234567890</p>
+        <p>Email: kublift@gmail.com</p>
+    </div>
+
+
+   <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+   <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-carousel', {
+                type    : 'loop',
+                perPage : 1,
+                autoplay: true,
+                // arrows: false,
+
+            } ).mount();
+            
+        } );
+    </script>
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    <script src="/src/js/dropdown.js"></script>
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

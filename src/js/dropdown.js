@@ -18,6 +18,15 @@ $('.col').hover( function() {
    $(this).children(".head-container").slideToggle(300)
 });
 
+$(".maintenance-list").click(function() {
+    $(this).children(".maintenance-list__hidden-content").slideToggle(300)
+    $(this).find(".bi").toggleClass("active")
+})
+$(".vacancies__list").click(function() {
+    $(this).children(".vacancies__list--hidden-content").slideToggle(300)
+    $(this).find(".vacancies__list--header").toggleClass("active")
+})
+
 
 tippy('.btn-email', {
     content: 'Скопировать',
