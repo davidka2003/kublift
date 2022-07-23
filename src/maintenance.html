@@ -1,256 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О нас</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Slick -->
-    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link
+      rel="stylesheet"
+      href="/node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
 
     <!-- Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+  </head>
+  <body>
     <div class="header">
-        <div class="top-header-pannel">
-            <div class="nav-panel">
-                <div class="nav-link">
-                    <a href="/src/">О нас</a>
-                </div>
-                <div class="nav-dropdown">
-                    <div class="dropbtn">
-                        <a >Наши услуги</a>
-                    </div>
-                    
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="/src/maintenance.html">Техническое обслуживание</a>
-                      <a href="/src/repair.html">Ремонт </a>
-                      <a href="/src/modernization.html">Модернизация</a>
-                      <a href="/src/dispatching.html">Диспетчеризация</a>
-                      <a href="/src/dismantling.html">Демонтаж</a>
-                    </div>
-                </div>
-                <div class="nav-link">
-                    <a href="/src/partners.html">Наши партнеры</a>
-                </div>
-                <div class="nav-link">
-                    <a href="/src/vacancies.html">Вакансии</a>
-                </div>
-                <div class="nav-link">
-                    <a href="/src/contacts.html">Контакты</a>
-                </div>
-                
-                
+      <div class="top-header-pannel">
+        <div class="nav-panel">
+          <div class="nav-link">
+            <a href="/">О нас</a>
+          </div>
+          <div class="nav-dropdown">
+            <div class="dropbtn">
+              <a>Наши услуги</a>
             </div>
-            <div class="mobile-show-btn-container">
-                <button class="mobile-accrodion">
-                    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-caret-down" viewBox="0 0 16 16">
-                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="bottom-header-panel">
-            <div class="logo-container">
-                <img src="/src/img/logo.jpg" alt="" class="logo">
-            </div>
-            <div class="connection-panel">
-                <button class="btn-email" data-clipboard-text="qwerty@gmail.com" > qwerty@gmail.com </button>
-                <button class="btn-phone" data-clipboard-text="+790429242222"> +7123456789 </button>
-            </div>
-        </div>
-    </div>
-    
-    <div class="our-services">
-        <div class="our-services__description">
-            <p>Техническое обслуживание</p>
-            <p>ООО “Кублифт” на протяжении 15 лет занимается техническим обслуживанием лифтов, эскалаторов и инвалидных подъёмников. 
-                Все наши специалисты проходят необходимый профессиональный отбор и постоянное повышение квалификации, имеют необходимые знания и опыт работы. 
-                Благодаря этому восстановление работоспособности лифтового оборудования производится в кратчайшие сроки. 
-                Наша задача поддерживать работоспособность лифта на высоком уровне без длительных ремонтов и неудобств для партнёров. 
-            </p>
-        </div>
-        <div class="our-services__maintenance">
-            <p>Согласно регламенту, в техническое обслуживание различного вида оборудования входят: </p>
-            
-            <div class="maintenance-list">
-                <div class="maintenance-list__header">
-                    <p>ТО-1 (Выполняется 1 раз в месяц)</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                </div>
-                
-                <ul class="maintenance-list__hidden-content">
-                    <li>
-                        Проверка освещенности кабины лифта, шахты, машинного помещения;
-                    </li>
-                    <li>
-                        Проверка исправности вызывных и приказных аппаратов;
-                    </li>
-                    <li>
-                        Проверка точности остановки, отсутствия вибраций и посторонних шумов при контрольной поездке на лифте;                    </li>
-                    <li>
-                        Проверка работоспособности системы управления дверей кабины и шахты, реверса дверей кабины, контроль закрытия дверей;
-                    </li>
-                    <li>
-                        Технический осмотр тормоза лебедки.
-                    </li>
-                    <li>
-                        Проверка состояния канатов, подвески, устройства слабины тяговых канатов (СПК);
-                    </li>
-                    <li>
-                        Технический осмотр привода дверей кабины;
-                    </li>
-                    <li>
-                        Технический осмотр дверей шахты, замков и контактов дверей шахты;
-                    </li>
-                    <li>
-                        Осмотр оборудования в шахте и приямке, очистка его от загрязнений;
-                    </li>
-                    <li>
-                        Осмотр оборудования в машинном помещении, шкафе управления и очистка его от загрязнений;
-                    </li>
-                    <li>
-                        Проверка уровня масла в главном редукторе;
-                    </li>
-                    <li>
-                        Проверка величины зазоров между датчиками, установленными на кабине, и шунтами, установленными в шахте;
-                    </li>
-                    <li>
-                        Проверка состояния электрических контактов в аппаратах, установленных в шахте и на кабине;
-                    </li>
-                    <li>Очистка низковольтного коммутационного устройства (НКУ) от пыли, проверка проводов, надежности электрических контактов;   </li>
-                    <li>
-                        Проверка крепления канатоведущего шкива и электродвигателя;
 
-                    </li>
-                    <li>
-                        Проверка износа вкладышей башмаков кабины и противовеса;
-                    </li>
-                    <li>
-                        Проверка крепления направляющих линеек, роликов  к кареткам, створок к кареткам, башмаков;
-                    </li>
-                    <li>
-                        Проверка расстояния между нижним торцом створок и порогом закрытой двери шахты и между створками и обрамлением;
-                    </li>
-                    <li>
-                        Проверка работоспособности выключателей цепи безопасности.
-                    </li>
-                </ul>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="/maintenance.html">Техническое обслуживание</a>
+              <a href="/repair.html">Ремонт </a>
+              <a href="/modernization.html">Модернизация</a>
+              <a href="/dispatching.html">Диспетчеризация</a>
+              <a href="/dismantling.html">Демонтаж</a>
             </div>
-            <div class="maintenance-list">
-                
-                <div class="maintenance-list__header">
-                    <p>ТО-3 (Выполняется 1 раз в квартал)</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                </div>
-                <ul class="maintenance-list__hidden-content">
-                    <li> Осмотр аппаратуры автоматического включения резерва. </li>
-                    <li>Осмотр панели управления.</li>
-                    <li>Осмотр канатоведущего шкива.</li>
-                    <li>Осмотр электродвигателя (генератора)</li>
-                    <li>Осмотр концевых выключателей.</li>
-                    <li>Осмотр канатов.</li>
-                    <li>Осмотр направляющих кабины и противовеса. </li>
-                    <li>Осмотр башмаков кабины.</li>
-                    <li>Осмотр индуктивных датчиков. </li>
-                    <li>Осмотр распашных дверей шахты.</li>
-                    <li>Осмотр раздвижных дверей шахты.</li>
-                    <li>Осмотр раздвижной автоматической двери кабины. </li>
-                    <li>Осмотр кнопочного аппарата управления. </li>
-                    <li>Осмотр вызывных аппаратов.</li>
-                    <li>Осмотр подвески кабины и противовеса.</li>
-                    <li>Осмотр противовеса.</li>
-                    <li>Осмотр купе кабины.</li>
-                    <li>Осмотр натяжного устройства ограничителя скорости.</li>
-                </ul>
-            </div>
-            <div class="maintenance-list">
-                
-                <div class="maintenance-list__header">
-                    <p>ТО-6 (Выполняется полугодовой осмотр).</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                </div>
-                <ul class="maintenance-list__hidden-content">
-                    <li>Осмотр вводного устройства (главного рубильника).</li>
-                    <li>Осмотр редуктора.</li>
-                    <li>Осмотр ограничителя скорости.</li>
-                    <li>Осмотр электродвигателя (генератора)</li>
-                    <li>Осмотр концевых выключателей.</li>
-                    <li>Осмотр ловителей. </li>
-                    <li>Осмотр блоков. </li>
-                    <li>Осмотр выключателя блочного помещения. </li>
-                    <li></li>
-                    <li>Осмотр заземления электрооборудования и изоляции проводов лифта.</li>
-                </ul>
-            </div>
-            <div class="maintenance-list">
-                <div class="maintenance-list__header">
-                    <p>ТО-12 (Выполняется 1 раз в год при подготовке к техническому освидетельствованию):</p>                     
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                </div>
-                <ul class="maintenance-list__hidden-content">
-                    <li>Работы предусмотренные ТО-1;</li>
-                    <li>Технический осмотр и проверка действия ловителей кабины;</li>
-                    <li>Технический осмотр и проверка действия ограничителя скорости (ОС);</li>
-                    <li>Технический осмотр и проверка действия буфера кабины и противовеса;</li>
-                    <li>Проверка штихмаса кабинных и противовесных направляющих;</li>
-                    <li>Проверка состояния подвесного кабеля;</li>
-                    <li>Проверка защитного заземления оборудования;</li>
-                    <li>Осмотр выключателя блочного помещения. </li>
-                    <li>Проверка с представителем Инженерного центра.</li>
-                </ul>
-            </div>
-            <p class="subparagraph">Для более детального описания технического обслуживания оборудования и расчёта его стоимости позвоните нам или оставьте заявку на сайте. Специалисты свяжутся с вами в кратчайшие сроки.   </p>
+          </div>
+          <div class="nav-link">
+            <a href="/partners.html">Наши партнеры</a>
+          </div>
+          <div class="nav-link">
+            <a href="/vacancies.html">Вакансии</a>
+          </div>
+          <div class="nav-link">
+            <a href="/contacts.html">Контакты</a>
+          </div>
         </div>
+        <div class="mobile-show-btn-container">
+          <button class="mobile-accrodion">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-caret-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="bottom-header-panel">
+        <div class="logo-container">
+          <img src="/img/logo.jpg" alt="" class="logo" />
+        </div>
+        <div class="connection-panel">
+          <button class="btn-email" data-clipboard-text="qwerty@gmail.com">
+            qwerty@gmail.com
+          </button>
+          <button class="btn-phone" data-clipboard-text="+790429242222">
+            +7123456789
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-services">
+      <div class="our-services__description">
+        <p>Техническое обслуживание</p>
+        <p>
+          ООО “Кублифт” на протяжении 15 лет занимается техническим
+          обслуживанием лифтов, эскалаторов и инвалидных подъёмников. Все наши
+          специалисты проходят необходимый профессиональный отбор и постоянное
+          повышение квалификации, имеют необходимые знания и опыт работы.
+          Благодаря этому восстановление работоспособности лифтового
+          оборудования производится в кратчайшие сроки. Наша задача поддерживать
+          работоспособность лифта на высоком уровне без длительных ремонтов и
+          неудобств для партнёров.
+        </p>
+      </div>
+      <div class="our-services__maintenance">
+        <p>
+          Согласно регламенту, в техническое обслуживание различного вида
+          оборудования входят:
+        </p>
+
+        <div class="maintenance-list">
+          <div class="maintenance-list__header">
+            <p>ТО-1 (Выполняется 1 раз в месяц)</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              />
+            </svg>
+          </div>
+
+          <ul class="maintenance-list__hidden-content">
+            <li>
+              Проверка освещенности кабины лифта, шахты, машинного помещения;
+            </li>
+            <li>Проверка исправности вызывных и приказных аппаратов;</li>
+            <li>
+              Проверка точности остановки, отсутствия вибраций и посторонних
+              шумов при контрольной поездке на лифте;
+            </li>
+            <li>
+              Проверка работоспособности системы управления дверей кабины и
+              шахты, реверса дверей кабины, контроль закрытия дверей;
+            </li>
+            <li>Технический осмотр тормоза лебедки.</li>
+            <li>
+              Проверка состояния канатов, подвески, устройства слабины тяговых
+              канатов (СПК);
+            </li>
+            <li>Технический осмотр привода дверей кабины;</li>
+            <li>
+              Технический осмотр дверей шахты, замков и контактов дверей шахты;
+            </li>
+            <li>
+              Осмотр оборудования в шахте и приямке, очистка его от загрязнений;
+            </li>
+            <li>
+              Осмотр оборудования в машинном помещении, шкафе управления и
+              очистка его от загрязнений;
+            </li>
+            <li>Проверка уровня масла в главном редукторе;</li>
+            <li>
+              Проверка величины зазоров между датчиками, установленными на
+              кабине, и шунтами, установленными в шахте;
+            </li>
+            <li>
+              Проверка состояния электрических контактов в аппаратах,
+              установленных в шахте и на кабине;
+            </li>
+            <li>
+              Очистка низковольтного коммутационного устройства (НКУ) от пыли,
+              проверка проводов, надежности электрических контактов;
+            </li>
+            <li>Проверка крепления канатоведущего шкива и электродвигателя;</li>
+            <li>Проверка износа вкладышей башмаков кабины и противовеса;</li>
+            <li>
+              Проверка крепления направляющих линеек, роликов к кареткам,
+              створок к кареткам, башмаков;
+            </li>
+            <li>
+              Проверка расстояния между нижним торцом створок и порогом закрытой
+              двери шахты и между створками и обрамлением;
+            </li>
+            <li>Проверка работоспособности выключателей цепи безопасности.</li>
+          </ul>
+        </div>
+        <div class="maintenance-list">
+          <div class="maintenance-list__header">
+            <p>ТО-3 (Выполняется 1 раз в квартал)</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              />
+            </svg>
+          </div>
+          <ul class="maintenance-list__hidden-content">
+            <li>Осмотр аппаратуры автоматического включения резерва.</li>
+            <li>Осмотр панели управления.</li>
+            <li>Осмотр канатоведущего шкива.</li>
+            <li>Осмотр электродвигателя (генератора)</li>
+            <li>Осмотр концевых выключателей.</li>
+            <li>Осмотр канатов.</li>
+            <li>Осмотр направляющих кабины и противовеса.</li>
+            <li>Осмотр башмаков кабины.</li>
+            <li>Осмотр индуктивных датчиков.</li>
+            <li>Осмотр распашных дверей шахты.</li>
+            <li>Осмотр раздвижных дверей шахты.</li>
+            <li>Осмотр раздвижной автоматической двери кабины.</li>
+            <li>Осмотр кнопочного аппарата управления.</li>
+            <li>Осмотр вызывных аппаратов.</li>
+            <li>Осмотр подвески кабины и противовеса.</li>
+            <li>Осмотр противовеса.</li>
+            <li>Осмотр купе кабины.</li>
+            <li>Осмотр натяжного устройства ограничителя скорости.</li>
+          </ul>
+        </div>
+        <div class="maintenance-list">
+          <div class="maintenance-list__header">
+            <p>ТО-6 (Выполняется полугодовой осмотр).</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              />
+            </svg>
+          </div>
+          <ul class="maintenance-list__hidden-content">
+            <li>Осмотр вводного устройства (главного рубильника).</li>
+            <li>Осмотр редуктора.</li>
+            <li>Осмотр ограничителя скорости.</li>
+            <li>Осмотр электродвигателя (генератора)</li>
+            <li>Осмотр концевых выключателей.</li>
+            <li>Осмотр ловителей.</li>
+            <li>Осмотр блоков.</li>
+            <li>Осмотр выключателя блочного помещения.</li>
+            <li></li>
+            <li>
+              Осмотр заземления электрооборудования и изоляции проводов лифта.
+            </li>
+          </ul>
+        </div>
+        <div class="maintenance-list">
+          <div class="maintenance-list__header">
+            <p>
+              ТО-12 (Выполняется 1 раз в год при подготовке к техническому
+              освидетельствованию):
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+              />
+            </svg>
+          </div>
+          <ul class="maintenance-list__hidden-content">
+            <li>Работы предусмотренные ТО-1;</li>
+            <li>Технический осмотр и проверка действия ловителей кабины;</li>
+            <li>
+              Технический осмотр и проверка действия ограничителя скорости (ОС);
+            </li>
+            <li>
+              Технический осмотр и проверка действия буфера кабины и
+              противовеса;
+            </li>
+            <li>Проверка штихмаса кабинных и противовесных направляющих;</li>
+            <li>Проверка состояния подвесного кабеля;</li>
+            <li>Проверка защитного заземления оборудования;</li>
+            <li>Осмотр выключателя блочного помещения.</li>
+            <li>Проверка с представителем Инженерного центра.</li>
+          </ul>
+        </div>
+        <p class="subparagraph">
+          Для более детального описания технического обслуживания оборудования и
+          расчёта его стоимости позвоните нам или оставьте заявку на сайте.
+          Специалисты свяжутся с вами в кратчайшие сроки.
+        </p>
+      </div>
     </div>
 
     <div class="bottom">
-        <p>Адрес: Москва, улица .... ..... .....</p>
-        <p>Телефон: +71234567890</p>
-        <p>Email: kublift@gmail.com</p>
+      <p>Адрес: Москва, улица .... ..... .....</p>
+      <p>Телефон: +71234567890</p>
+      <p>Email: kublift@gmail.com</p>
     </div>
 
-
-   <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-   <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '#image-carousel', {
-                type    : 'loop',
-                perPage : 1,
-                autoplay: true,
-                // arrows: false,
-
-            } ).mount();
-            
-        } );
+    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-carousel", {
+          type: "loop",
+          perPage: 1,
+          autoplay: true,
+          // arrows: false,
+        }).mount();
+      });
     </script>
-    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-    <script src="/src/js/dropdown.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/dropdown.js"></script>
     <script src="/node_modules/aos/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
+  </body>
 </html>
