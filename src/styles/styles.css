@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .header {
   margin: 0;
   height: 0px;
-  border-bottom: solid 2px whitesmoke;
+  border-bottom: solid  2px whitesmoke;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -21,8 +21,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding: 5px 40px;
 }
 
@@ -81,7 +81,7 @@ body {
   background-color: #f1f1f1;
   min-width: 100px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -116,8 +116,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px 40px;
 }
 
@@ -169,7 +169,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -187,6 +187,10 @@ body {
 
 .about-us .splide__list .slide-3 {
   background-image: url(/img/3.jpg);
+}
+
+.about-us .splide__list .slide-4 {
+  background-image: url(/img/collagebanner.png);
 }
 
 .about-us .about-us-info .about-us-text {
@@ -211,7 +215,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 40px;
 }
 
@@ -293,8 +297,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .our-services__maintenance .maintenance-list__header p {
@@ -315,7 +319,7 @@ body {
 
 .our-services__maintenance .maintenance-list__header svg.active {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
   color: #981616;
 }
 
@@ -327,7 +331,7 @@ body {
   background-color: whitesmoke;
 }
 
-.our-services__maintenance .maintenance-list:nth-child(2n + 1) {
+.our-services__maintenance .maintenance-list:nth-child(2n+1) {
   background-color: #e7e7e7;
 }
 
@@ -343,7 +347,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .our-services__work .grid .grid-50 {
@@ -397,8 +401,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .vacancies-body .vacancies__list--header p {
@@ -420,7 +424,7 @@ body {
 
 .vacancies-body .vacancies__list--header.active svg {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
   color: #981616;
 }
 
@@ -455,11 +459,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacts .iframe-container iframe {
@@ -493,7 +497,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .partners__row--col {
@@ -584,8 +588,8 @@ body {
     height: -moz-fit-content;
     height: fit-content;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: block;
   }
   .header .top-header-pannel .nav-panel {
@@ -599,7 +603,7 @@ body {
     padding: 5px;
   }
   .header .top-header-pannel .nav-panel .nav-link a {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
   }
   .header .top-header-pannel .nav-panel .nav-dropdown {
@@ -611,13 +615,13 @@ body {
   }
   .header .top-header-pannel .nav-panel .nav-dropdown a {
     padding: 5px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
   }
   .header .top-header-pannel .nav-panel .nav-dropdown .dropdown-content {
     position: relative;
     -webkit-box-shadow: none;
-    box-shadow: none;
+            box-shadow: none;
     background-color: #e9e9e9;
   }
   .header .top-header-pannel .mobile-show-btn-container {
@@ -629,7 +633,7 @@ body {
     outline: none;
     border: none;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
     padding: 10px;
@@ -642,7 +646,7 @@ body {
   }
   .header .top-header-pannel .mobile-show-btn-container button.active {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .header .top-header-pannel .mobile-show-btn-container button.active svg {
     fill: #981616;
@@ -676,7 +680,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: wrap;
-    flex-flow: wrap;
+        flex-flow: wrap;
   }
   .about-us .about-us-info .grid .grid-50 {
     width: 100%;
@@ -695,23 +699,23 @@ body {
   }
   .about-us .about-us-info .grid .col-3 {
     -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .about-us .about-us-info .grid .col-4 {
     -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .about-us .about-us-info .grid .col-7 {
     -webkit-box-ordinal-group: 8;
-    -ms-flex-order: 7;
-    order: 7;
+        -ms-flex-order: 7;
+            order: 7;
   }
   .about-us .about-us-info .grid .col-8 {
     -webkit-box-ordinal-group: 7;
-    -ms-flex-order: 6;
-    order: 6;
+        -ms-flex-order: 6;
+            order: 6;
   }
   .our-services {
     min-height: calc(100vh - 300px);
@@ -737,8 +741,8 @@ body {
   }
   .partners__row--col .head-container .img-container {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .partners__row--col .head-container .img-container img {
     width: 50%;
