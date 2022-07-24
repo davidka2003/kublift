@@ -178,15 +178,15 @@ body {
 }
 
 .about-us .splide__list .slide-1 {
-  background-image: url(/img/1.jpg);
+  background-image: url(./img/1.jpg);
 }
 
 .about-us .splide__list .slide-2 {
-  background-image: url(/img/2.jpeg);
+  background-image: url(./img/2.jpeg);
 }
 
 .about-us .splide__list .slide-3 {
-  background-image: url(/img/3.jpg);
+  background-image: url(./img/3.jpg);
 }
 
 .about-us .about-us-info .about-us-text {
