@@ -12,10 +12,10 @@ $(".mobile-accrodion").click(function() {
    
 })
 
-$('.col').hover( function() {
+$('.partners__row--col').hover( function() {
   
-   $(this).children(".hover-container").slideToggle(300)
-   $(this).children(".head-container").slideToggle(300)
+   $(this).children(".hover-container").slideToggle(450)
+   $(this).children(".head-container").slideToggle(450)
 });
 
 $(".maintenance-list").click(function() {
