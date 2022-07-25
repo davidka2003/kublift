@@ -116,7 +116,11 @@ $orig-red: rgb(226, 4, 18 );
 
     } 
 }
-
+@media screen and (min-width: 702px) {
+    .nav-panel{
+        display: flex !important;
+    }
+}
 @media screen and (max-width: 701px){
     .header{
         .top-header-pannel{
@@ -161,16 +165,18 @@ $orig-red: rgb(226, 4, 18 );
                 display: block;
                 text-align: center;
                 button{
+                    color: black;
                     background-color: transparent;
                     outline: none;
                     border: none;
                     transform: rotate(0deg);
-				    transition: all 0.6s;
+				    transition: color 0.6s ease;
                     padding: 10px;
                     svg{
                         fill: black;
                         width: 20px;
-                        transition: all 0.6s;
+                        transition: transform 0.6s ease,
+                                    color 0.6s ease;
                     }
                     
                     &.active{

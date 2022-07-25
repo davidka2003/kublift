@@ -86,14 +86,6 @@
   }
 }
 
-@media screen and (min-width: 702px) {
-  .nav-panel {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-}
-
 @media screen and (max-width: 701px) {
   .partners {
     padding: 10px;
