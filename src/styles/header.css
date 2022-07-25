@@ -114,16 +114,11 @@
   padding: 10px 40px;
 }
 
-.header .bottom-header-panel .logo-container {
-  width: 50%;
-}
-
 .header .bottom-header-panel .logo-container img {
   height: 100%;
 }
 
 .header .bottom-header-panel .connection-panel {
-  width: 50%;
   text-align: right;
   margin-top: auto;
   margin-bottom: auto;
