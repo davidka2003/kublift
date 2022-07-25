@@ -1,0 +1,113 @@
+.vacancies-body {
+  min-height: calc(100vh - 350px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vacancies-body .vacancies {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.vacancies-body .vacancies h1 {
+  text-align: center;
+  font-size: 22pt;
+  font-weight: 400;
+  color: #981616;
+  margin-bottom: 50px;
+}
+
+.vacancies-body .vacancies__list {
+  background-color: whitesmoke;
+  padding: 10px 50px;
+  margin-bottom: 10px;
+}
+
+.vacancies-body .vacancies__list--header {
+  cursor: pointer;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vacancies-body .vacancies__list--header h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  color: black;
+  font-size: 13pt;
+  font-weight: 400;
+}
+
+.vacancies-body .vacancies__list--header svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.vacancies-body .vacancies__list--header.active svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #981616;
+}
+
+.vacancies-body .vacancies__list--header.active h2 {
+  color: #981616;
+}
+
+.vacancies-body .vacancies__list--hidden-content {
+  padding: 20px;
+  display: none;
+}
+
+.vacancies-body .vacancies__list--hidden-content p {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+  color: black;
+  font-size: 13pt;
+  font-weight: 200;
+}
+
+.vacancies-body .vacancies__list .d-b {
+  display: block;
+}
+
+@media screen and (max-width: 701px) {
+  .vacancies-body .vacancies h1 {
+    font-size: 16pt;
+  }
+  .vacancies-body .vacancies__list {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .vacancies-body .vacancies__list--header {
+    padding: 0px;
+  }
+  .vacancies-body .vacancies__list--header h2 {
+    font-size: 13pt;
+    font-weight: 300;
+    max-width: 90%;
+  }
+  .vacancies-body .vacancies__list--header.active svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    color: #981616;
+  }
+  .vacancies-body .vacancies__list--header.active p {
+    color: #981616;
+  }
+  .vacancies-body .vacancies__list--hidden-content {
+    padding: 10px 0px;
+  }
+  .vacancies-body .vacancies__list--hidden-content p {
+    font-size: 11pt;
+  }
+}
+/*# sourceMappingURL=vacancies.css.map */

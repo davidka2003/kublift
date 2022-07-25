@@ -1,0 +1,50 @@
+$primary-blue: rgb(75, 75, 125);
+$primary-red: rgb(152, 22, 22);
+$orig-blue: rgb(15, 42, 131 );
+$orig-red: rgb(226, 4, 18 );
+
+
+.contacts{
+    padding: 60px;
+    .iframe-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            padding: 15px;
+            border-radius: 20px;
+            border: solid 2px whitesmoke;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 22pt;
+        font-weight: 400;
+        color: $primary-red;
+    }
+    
+
+}
+
+@media screen and (max-width: 701px){
+    
+    
+    .contacts{
+        div{
+            padding: 0px;
+        }
+        padding: 10px;
+        .iframe-container{
+            iframe{
+                padding: 0px;
+                border-radius: 0px;
+                border: none;
+                .iframe-content{
+                    padding: 0px;
+                }
+            }
+        }
+        
+    }
+}

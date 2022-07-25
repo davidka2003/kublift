@@ -10,7 +10,13 @@
     <link rel="shortcut icon" href="/img/logo-icon.png" type="image/png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <link rel="stylesheet" href="/styles/header.css">
+    
+    <link rel="stylesheet" href="/styles/our-services.css">
+    
+    <link rel="stylesheet" href="/styles/bottom.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,15 +91,20 @@
         <div class="logo-container">
           <img src="/img/logo.jpg" alt="" class="logo" />
         </div>
-        <div class="our-services__img-container">
-            <img  src="/img/work photo 2.jpeg" alt="">
+        <div class="connection-panel">
+          <button class="btn-email" data-clipboard-text="qwerty@gmail.com">
+            qwerty@gmail.com
+          </button>
+          <button class="btn-phone" data-clipboard-text="+790429242222">
+            +7123456789
+          </button>
         </div>
       </div>
     </div>
 
     <div class="our-services">
       <div class="our-services__description">
-        <p>Демонтаж</p>
+        <h1>Демонтаж</h1>
         <p>
           Лифт может служить примерно 25 лет. После окончания этого срока или
           при аварийном состоянии оборудования требуется его замена. ООО
@@ -122,26 +133,22 @@
       <p>Email: kublift@gmail.com</p>
     </div>
 
-    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#image-carousel", {
-          type: "loop",
-          perPage: 1,
-          autoplay: true,
-          // arrows: false,
-        }).mount();
-      });
-    </script>
+    
+    
+    <!-- JQUERY -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
+    <!-- POOPER -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>

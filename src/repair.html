@@ -11,6 +11,12 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/styles.css">
+    
+    <link rel="stylesheet" href="/styles/header.css">
+    
+    <link rel="stylesheet" href="/styles/our-services.css">
+    
+    <link rel="stylesheet" href="/styles/bottom.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -80,7 +86,7 @@
     
     <div class="our-services">
         <div class="our-services__description">
-            <p>Ремонт</p>
+            <h1>Ремонт</h1>
             <p>Помимо проведения регулярного технического обслуживания оборудования, наши сотрудники имеют возможность осуществлять плановый, срочный и капитальный ремонт. 
                 В распоряжении ООО “Кублифт” имеются пять производственных участков, круглосуточно работающий диспетчерский центр.
                 А большой склад запчастей даёт возможность производить замену любого оборудования в кратчайшие сроки.
@@ -103,24 +109,20 @@
     </div>
 
 
-   <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-   <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '#image-carousel', {
-                type    : 'loop',
-                perPage : 1,
-                autoplay: true,
-                // arrows: false,
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-            } ).mount();
-            
-        } );
-    </script>
-    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
+    <!-- POOPER -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

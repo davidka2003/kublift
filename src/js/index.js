@@ -1,6 +1,8 @@
 // import { copy } from "clipboard";
 
 
+
+
 $( ".dropbtn" ).click(function() {
     $("#myDropdown").slideToggle(500)
 });
@@ -12,6 +14,9 @@ $(".mobile-accrodion").click(function() {
    
 })
 
+
+
+
 $('.partners__row--col').hover( function() {
   
    $(this).children(".hover-container").slideToggle(450)
@@ -20,7 +25,7 @@ $('.partners__row--col').hover( function() {
 
 $(".maintenance-list").click(function() {
     $(this).children(".maintenance-list__hidden-content").slideToggle(300)
-    $(this).find(".bi").toggleClass("active")
+    $(this).find(".maintenance-list__header").toggleClass("active")
 })
 $(".vacancies__list").click(function() {
     $(this).children(".vacancies__list--hidden-content").slideToggle(300)

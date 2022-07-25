@@ -1,0 +1,122 @@
+$primary-blue: rgb(75, 75, 125);
+$primary-red: rgb(152, 22, 22);
+$orig-blue: rgb(15, 42, 131 );
+$orig-red: rgb(226, 4, 18 );
+
+.vacancies-body{
+    min-height: calc(100vh - 350px);
+    display: flex;
+    .vacancies{
+        width: 100%;
+        margin-top: 50px;
+        h1{
+            text-align: center;
+            font-size: 22pt;
+            font-weight: 400;
+            color: $primary-red;
+            margin-bottom: 50px;
+        }
+        &__list{
+            background-color: whitesmoke;
+            padding: 10px 50px;
+            margin-bottom: 10px;
+
+            &--header{
+                cursor: pointer;
+                padding: 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 400;
+                }
+                svg{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    transition: all 0.4s ease;
+                }
+                &.active{
+                    svg{
+                        transform: rotate(+180deg);
+                        color: $primary-red;
+                    }
+                    h2{
+                        color: $primary-red;
+                    }
+
+                }
+            }
+            &--hidden-content{
+                padding: 20px;
+                display: none;
+                p{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 200;
+                }
+            }
+            .d-b{
+                display: block;
+            }
+            
+        }
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 701px){
+
+    .vacancies-body{
+        .vacancies{
+            h1{
+                font-size: 16pt;
+            }
+            &__list{
+                padding: 10px;
+                margin-bottom: 10px;
+    
+                &--header{
+                    padding: 0px ;
+                    h2{
+                        font-size: 13pt;
+                        font-weight: 300;
+                        max-width: 90%;
+                    }
+                    svg{
+                    }
+                    &.active{
+                        svg{
+                            transform: rotate(+180deg);
+                            color: $primary-red;
+                        }
+                        p{
+                            color: $primary-red;
+                        }
+    
+                    }
+                }
+                &--hidden-content{
+                    padding: 10px 0px;
+                    
+                    p{
+                        font-size: 11pt;
+                    }
+                }
+                
+            }
+    
+            
+        }
+        
+    }
+
+}

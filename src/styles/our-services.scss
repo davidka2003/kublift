@@ -1,0 +1,148 @@
+
+$primary-blue: rgb(75, 75, 125);
+$primary-red: rgb(152, 22, 22);
+$orig-blue: rgb(15, 42, 131 );
+$orig-red: rgb(226, 4, 18 );
+.our-services{
+    &__description{
+        padding: 50px;
+        h1{
+            text-align: center;
+            font-size: 22pt;
+            font-weight: 400;
+            color: $primary-red;
+        }
+        p{
+            font-size: 15pt;
+            font-weight: 200;
+            color: black;
+        }
+    }
+
+    &__img-container{
+        overflow: hidden;
+        padding: 0px 50px;
+        width: 100%;
+        max-height: 450px;
+        img{
+            width: 100%;
+        }
+    }
+    &__maintenance{
+        h1{
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 16pt;
+            font-weight: 400;
+            color: $primary-red;
+        }
+        .maintenance-list{
+            
+            padding: 10px 50px;
+
+            &__header{
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                h2{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    text-align: left;
+                    color: black;
+                    font-size: 13pt;
+                    font-weight: 400;
+                }
+                svg{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    transition: color 0.4s ease,
+                                 0.4s ease;
+                }
+                &.active{
+                    svg{
+                        transform: rotate(+180deg);
+                        color: $primary-red;
+                    }
+                    h2{
+                        color: $primary-red;
+                    }
+                    
+                }
+            }
+            &__hidden-content{
+                display: none;
+            }
+            
+        }
+        .maintenance-list:nth-child(2n){
+            background-color: whitesmoke;
+        }
+        .maintenance-list:nth-child(2n+1){
+            background-color: rgb(231, 231, 231);
+        }
+        .subparagraph{
+            padding: 10px 50px;
+            font-size: 10pt;
+            font-weight: 200;
+        }
+    }
+    &__work{
+        .grid{
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            .grid-50{
+                padding: 20px 40px;
+                
+                width: 50%;
+                padding-bottom: 20px;
+                :nth-child(1){
+                    text-align: center;
+                    font-size: 22pt;
+                    font-weight: 400;
+                    color: $primary-red;
+                }
+                :nth-child(2){
+                    font-size: 14pt;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 701px){
+    
+    .our-services{
+        h1{
+            font-size: 16pt;
+        }
+        min-height: calc(100vh - 300px);
+        &__description{
+            padding: 10px;
+            
+            p{
+                font-size: 12pt;
+            }
+        }     
+        &__maintenance{
+            .maintenance-list{
+                padding: 10px;
+                &__header{
+                    h2{
+                        font-size: 13pt;
+                        font-weight: 300;
+                        max-width: 90%;
+                    }
+                }
+                &__hidden-content{
+                    padding-top: 10px;
+                }
+            }
+
+            .subparagraph{
+                padding: 10px ;
+            }
+        }   
+    }
+}

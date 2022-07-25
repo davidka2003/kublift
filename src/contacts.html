@@ -10,24 +10,26 @@
     <link rel="shortcut icon" href="/img/logo-icon.png" type="image/png">
 
 
-    <link rel="shortcut icon" href="/img/logo-icon.png" type="image/png">
+
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/styles.css">
+
+    <link rel="stylesheet" href="/styles/header.css">
+
+    <link rel="stylesheet" href="/styles/contacts.css">
+    
+    <link rel="stylesheet" href="/styles/bottom.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 
-    <!-- Slick -->
-    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+   
 
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
-    <!-- AOS -->
-    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
 </head>
 <body>
     <div class="header">
@@ -83,7 +85,7 @@
     <div class="contacts">
         <p>Форма обратной связи</p>
         <div class="iframe-container">
-            <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/u/62b8c2b8cb662fd2c7bd7d51/?iframe=1" frameborder="0" name="ya-form-62b8c2b8cb662fd2c7bd7d51" width="650"></iframe>   
+            <script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe id="contactsIframe" src="https://forms.yandex.ru/u/62b8c2b8cb662fd2c7bd7d51/?iframe=1" frameborder="0" name="ya-form-62b8c2b8cb662fd2c7bd7d51" width="520" ></iframe>   
         </div>
      </div>
 
@@ -93,25 +95,20 @@
         <p>Email: kublift@gmail.com</p>
     </div>
 
+    <!-- JQUERY -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+    ></script>
 
-   <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-   <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '#image-carousel', {
-                type    : 'loop',
-                perPage : 1,
-                autoplay: true,
-                // arrows: false,
+   <!-- clipboard -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
-            } ).mount();
-            
-        } );
-    </script>
-    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+   <!-- POOPER -->
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+   <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

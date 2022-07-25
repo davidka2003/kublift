@@ -10,6 +10,12 @@
     
    <!-- Styles -->
    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <link rel="stylesheet" href="/styles/header.css">
+    
+    <link rel="stylesheet" href="/styles/vacancies.css">
+    
+    <link rel="stylesheet" href="/styles/bottom.css">
 
    <!-- Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -82,7 +88,7 @@
             <h1>В нашей организации открыты вакансии:</h1>
             <div class="vacancies__list">
                 <div class="vacancies__list--header active">
-                    <p>Электромеханик по лифтам:</p>
+                    <h2>Электромеханик по лифтам:</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
                     </svg>
@@ -101,7 +107,7 @@
             </div>
             <div class="vacancies__list">
                 <div class="vacancies__list--header">
-                    <p>Помощник электромеханика по лифтам:</p>
+                    <h2>Помощник электромеханика по лифтам:</h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
                     </svg>
@@ -132,24 +138,20 @@
     </div>
 
 
-   <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-   <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '#image-carousel', {
-                type    : 'loop',
-                perPage : 1,
-                autoplay: true,
-                // arrows: false,
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
 
-            } ).mount();
-            
-        } );
-    </script>
-    <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
+    <!-- POOPER -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="/js/index.js"></script>
 </body>
 </html>

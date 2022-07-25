@@ -1,0 +1,46 @@
+.contacts {
+  padding: 60px;
+}
+
+.contacts .iframe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts .iframe-container iframe {
+  padding: 15px;
+  border-radius: 20px;
+  border: solid 2px whitesmoke;
+}
+
+.contacts p {
+  text-align: center;
+  font-size: 22pt;
+  font-weight: 400;
+  color: #981616;
+}
+
+@media screen and (max-width: 701px) {
+  .contacts {
+    padding: 10px;
+  }
+  .contacts div {
+    padding: 0px;
+  }
+  .contacts .iframe-container iframe {
+    padding: 0px;
+    border-radius: 0px;
+    border: none;
+  }
+  .contacts .iframe-container iframe .iframe-content {
+    padding: 0px;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

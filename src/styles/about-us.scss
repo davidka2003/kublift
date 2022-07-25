@@ -1,0 +1,144 @@
+$primary-blue: rgb(75, 75, 125);
+$primary-red: rgb(152, 22, 22);
+$orig-blue: rgb(15, 42, 131 );
+$orig-red: rgb(226, 4, 18 );
+
+.about-us{
+    overflow: hidden;
+    .splide__list{
+        .splide__slide {
+            height: 400px;
+            
+            background-position: center;
+            .slider-text{
+                font-size: 20pt;
+                color: whitesmoke;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                // height: calc(100vh-150px);
+            }
+            
+            
+        }
+        .slide-1{
+            background-image: url(/img/1.jpg);
+        }
+        .slide-2{
+            background-image: url(/img/2.jpeg);
+        }
+        .slide-3{
+            background-image: url(/img/3.jpg);
+        }
+        .slide-4{
+            background-image: url(/img/collagebanner.png);
+        }
+    }
+    .about-us-info{
+
+        .about-us-text{
+
+            text-align:justify;
+            padding: 50px 50px;
+            :nth-child(1){
+                font-size: 22pt;
+                font-weight: 400;
+                color: $primary-red;
+            }
+            :nth-child(2){
+                font-size: 15pt;
+                font-weight: 200;
+            }
+            
+        }
+        
+        .grid{
+            background-color: whitesmoke;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+            .right-img{
+                text-align: right;
+            }
+            .grid-50{
+                width: 50%;
+                padding-bottom: 20px;
+                img{
+                    text-align: right;
+                    width: 95%;
+                }
+            }
+            
+            .grid-info-text{
+                text-align: justify;
+                padding: 30px 60px;
+                margin-top: 6%;
+                :nth-child(1){
+                    text-align: center;
+                    font-size: 20pt;
+                    font-weight: 300;
+                    color: $primary-red;
+                }
+                :nth-child(2){
+                    font-size: 15pt;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 701px){
+    .about-us{
+        .about-us-info{
+            .about-us-text{
+                padding: 20px;
+                :nth-child(1){
+                    font-size: 18pt;
+                }
+                :nth-child(2){
+                    font-size: 13pt;
+                    word-spacing: 5px;
+                }
+            }
+            .grid{
+                display: flex;
+                flex-flow: wrap;
+                .grid-50{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                    .grid-info-text{
+                        padding: 20px;
+                        :nth-child(1){
+                            font-size: 18pt;
+                        }
+                        p{
+                            font-size: 13pt;
+                        }
+                        
+                    }
+                }
+                .col-3{
+                    order: 3
+                }
+                .col-4{
+                    order: 2
+                }
+                .col-7{
+                    order: 7
+                }
+                .col-8{
+                    order: 6;
+                }
+            }
+        }
+    }
+}    

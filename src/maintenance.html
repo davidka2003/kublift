@@ -10,7 +10,13 @@
     <link rel="shortcut icon" href="/img/logo-icon.png" type="image/png">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+    <link rel="stylesheet" href="/styles/header.css">
+    
+    <link rel="stylesheet" href="/styles/our-services.css">
+    
+    <link rel="stylesheet" href="/styles/bottom.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,12 +24,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
       rel="stylesheet"
-    />
-
-    <!-- Slick -->
-    <link
-      rel="stylesheet"
-      href="/node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
 
     <!-- Bootstrap  -->
@@ -34,8 +34,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
   </head>
   <body>
     <div class="header">
@@ -98,7 +96,7 @@
 
     <div class="our-services">
       <div class="our-services__description">
-        <p>Техническое обслуживание</p>
+        <h1>Техническое обслуживание</h1>
         <p>
           ООО “Кублифт” на протяжении 15 лет занимается техническим
           обслуживанием лифтов, эскалаторов и инвалидных подъёмников. Все наши
@@ -111,14 +109,14 @@
         </p>
       </div>
       <div class="our-services__maintenance">
-        <p>
+        <h1>
           Согласно регламенту, в техническое обслуживание различного вида
           оборудования входят:
-        </p>
+        </h1>
 
         <div class="maintenance-list">
           <div class="maintenance-list__header">
-            <p>ТО-1 (Выполняется 1 раз в месяц)</p>
+            <h2>ТО-1 (Выполняется 1 раз в месяц)</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -191,7 +189,7 @@
         </div>
         <div class="maintenance-list">
           <div class="maintenance-list__header">
-            <p>ТО-3 (Выполняется 1 раз в квартал)</p>
+            <h2>ТО-3 (Выполняется 1 раз в квартал)</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -229,7 +227,7 @@
         </div>
         <div class="maintenance-list">
           <div class="maintenance-list__header">
-            <p>ТО-6 (Выполняется полугодовой осмотр).</p>
+            <h2>ТО-6 (Выполняется полугодовой осмотр).</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -261,10 +259,10 @@
         </div>
         <div class="maintenance-list">
           <div class="maintenance-list__header">
-            <p>
+            <h2>
               ТО-12 (Выполняется 1 раз в год при подготовке к техническому
               освидетельствованию):
-            </p>
+            </h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -310,26 +308,20 @@
       <p>Email: kublift@gmail.com</p>
     </div>
 
-    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#image-carousel", {
-          type: "loop",
-          perPage: 1,
-          autoplay: true,
-          // arrows: false,
-        }).mount();
-      });
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
+     <!-- JQUERY -->
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"
     ></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+    <!-- clipboard -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+
+    <!-- POOPER -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>
