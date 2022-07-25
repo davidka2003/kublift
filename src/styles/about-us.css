@@ -104,6 +104,10 @@
 }
 
 @media screen and (max-width: 701px) {
+  .about-us .splide__list .splide__slide .slider-text {
+    width: 300px;
+    font-size: 14pt;
+  }
   .about-us .about-us-info .about-us-text {
     padding: 20px;
   }
