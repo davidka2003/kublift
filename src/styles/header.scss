@@ -175,8 +175,9 @@ $orig-red: rgb(226, 4, 18 );
                     }
                     
                     &.active{
-                        transform: rotate(180deg);
+                        color: $primary-red;
                         svg{
+                            transform: rotate(180deg);
                             fill: $primary-red;
                         }
                         

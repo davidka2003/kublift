@@ -210,10 +210,11 @@
     transition: all 0.6s;
   }
   .header .top-header-pannel .mobile-show-btn-container button.active {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    color: #981616;
   }
   .header .top-header-pannel .mobile-show-btn-container button.active svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
     fill: #981616;
   }
   .header .bottom-header-panel {
