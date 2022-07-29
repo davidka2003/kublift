@@ -23,11 +23,22 @@
 }
 
 .our-services__img-container--banner {
-  background-image: url(/img/диспетчеризация.jpeg);
   background-size: 100%;
   width: 100%;
   height: 100%;
   background-position: center;
+}
+
+.our-services__img-container .dispatching {
+  background-image: url(/img/диспетчеризация.jpeg);
+}
+
+.our-services__img-container .maintenance {
+  background-image: url(/img/photo_2022-07-29.jpeg);
+}
+
+.our-services__img-container .repair {
+  background-image: url(/img/collagebanner.png);
 }
 
 .our-services__img-container img {
