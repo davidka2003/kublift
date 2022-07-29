@@ -4,4 +4,24 @@ body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
+
+body h2 {
+  font-size: 22pt;
+  font-weight: 300;
+  color: #981616;
+}
+
+body p {
+  font-size: 15pt;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 701px) {
+  body h2 {
+    font-size: 18pt;
+  }
+  body p {
+    font-size: 13pt;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

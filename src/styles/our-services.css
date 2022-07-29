@@ -125,6 +125,7 @@
   padding: 20px 40px;
   width: 50%;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .our-services__work .grid .grid-50 :nth-child(1) {
