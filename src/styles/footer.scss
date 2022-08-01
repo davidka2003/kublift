@@ -1,0 +1,15 @@
+
+$primary-blue: rgb(75, 75, 125);
+$primary-red: rgb(152, 22, 22);
+
+.footer{
+    bottom: 0;
+    padding: 30px;
+    background-color: rgb(231, 231, 231);
+    
+    p{
+        span{
+            color: $primary-red;
+        }
+    }
+}
