@@ -16,6 +16,11 @@ body p {
   font-weight: 200;
 }
 
+body a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
 @media screen and (max-width: 701px) {
   body h2 {
     font-size: 18pt;

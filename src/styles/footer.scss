@@ -6,10 +6,84 @@ $primary-red: rgb(152, 22, 22);
     bottom: 0;
     padding: 30px;
     background-color: rgb(231, 231, 231);
-    
+    display: flex;
+    justify-content: space-between;
+    .footer-content-description{
+        p{
+            font-weight: 400;
+        }
+        
+    }
+
     p{
-        span{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    a{
+        color: black;
+        font-size: 16px;
+        font-weight: 300;
+        &:hover{
             color: $primary-red;
+        }
+    }
+    
+    &__contacts{
+        
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p{
+                margin-bottom: 0;
+            
+                span{
+                    color: $primary-red;
+                }
+            }
+        }
+        
+    }
+    &__nav{
+        display: flex;
+        gap: 50px;
+        &__links{
+            
+        }
+        &__services{
+            .services-links{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 701px){
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+        &__contacts{
+        
+        
+            &__info{
+                gap: 10px;
+            }
+        }
+        &__nav{
+            flex-direction: column;
+            gap: 20px;
+            &__links{
+
+            }
+            &__services{
+            }
         }
     }
 }
